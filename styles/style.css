@@ -8,11 +8,48 @@
 
 body {
   font-family: "Work Sans", sans-serif;
-  background-color: #bbede3;
+  background-color: #d1d3d3;
 }
 
 h1 {
-  color: #2d3e33;
+  color: #1f3226;
   text-align: center;
   text-transform: uppercase;
+}
+
+.contenido {
+  color: #1c4d2e;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.saludo {
+  color: #1c4d2e;
+  margin-top: 30px;
+}
+
+.boton {
+  display: inline-block;
+  text-decoration: none;
+  padding: 4px;
+  color: black;
+  border-radius: 5px;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  justify-content: center;
+  border: 1px solid black;
+  align-items: center;
+  margin: 30px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.mensaje {
+  color: #ef1616;
+  font-size: 1.1em;
+  margin: 20px;
 }

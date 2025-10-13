@@ -1,47 +1,61 @@
-const clases= [
+const clases = [
     {
-        id: 1, 
-        nombre: "yoga", 
+        id: 1,
+        nombre: "yoga",
         dia: "lunes",
-        hora: 10,
+        hora: 10
     },
     {
-        id: 2, 
-        nombre: "pilates", 
+        id: 2,
+        nombre: "pilates",
         dia: "martes",
         hora: 11,
     },
     {
-        id: 3, 
-        nombre: "acrobacia en tela", 
+        id: 3,
+        nombre: "acrobacia en tela",
         dia: "martes",
         hora: 18,
     },
     {
-        id: 4, 
-        nombre: "zumba", 
+        id: 4,
+        nombre: "zumba",
         dia: "miercoles",
         hora: 10,
     },
     {
-        id: 5, 
-        nombre: "funcional", 
+        id: 5,
+        nombre: "funcional",
         dia: "viernes",
         hora: 19,
     },
 ]
-let cartClases = []
+let reservas = []
 
-let clasesContainer = document.getElementById("clases-container")
-function renderClasess(clasesArray) {
+let clasesContenedor = document.getElementById("clases-contenedor")
+function renderClases(clasesArray) {
     clasesArray.forEach(clase => {
-        const card = document.createElement("div")
-        card.innerHTML = `<h3>${clase.nombre}</h3>
-                          <h4>${clase.dia}</h4>
-                          <h4>${clase.hora}</h4>
-                          <button class="claseReservar" id="${clase.id}">Reservar</button>`
-        clasesContainer.appendChild(card)
+        const tarjeta = document.createElement("div")
+        tarjeta.innerHTML = `<h3>${clase.nombre}</h3>
+                            <h4>${clase.dia}</h4>
+                            <h4>${clase.hora} hs</h4>
+                            <button class="reservar" id="${clase.id}">Reservar</button>`
+        clasesContenedor.appendChild(tarjeta)
     })
-
+    botonDeReserva()
 }
-renderClasess(clases)
+renderClases(clases)
+
+function botonDeReserva() {
+    botonReservar = document.querySelectorAll(".reservar")
+    botonReservar.forEach(boton => {
+        boton.onclick = (e) => {
+            const claseId = e.currentTarget.id
+            const claseSeleccionada = clases.find(clase => clase.id == claseId)
+
+            reservas.push(claseSeleccionada)
+
+            localStorage.setItem("reservas", JSON.stringify(reservas))
+        }
+    })
+}

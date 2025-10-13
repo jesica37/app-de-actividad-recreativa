@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- JS -->
     <script defer src="../j/registros.js"></script>
     <!--CSS-->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Simulador</title>
 </head>
+
 <body>
+
+    <h1>Ser libre</h1>
+    <h3 class="contenido">Ingese sus datos para registrarse:</h3>
 
     <label for="nombre">Nombre: </label>
     <input type="text" name="nombre" id="nombre">
     <label for="apellido">Apellido: </label>
     <input type="text" name="apellido" id="apellido">
-    <button id="enviar">Enviar</button>
-    <button> <a href="../index.html" id="volver">Volver</a></button>
+    <button id="enviar" class="boton">Enviar</button>
+    <button class="boton"> <a href="../index.html" id="volver">Volver</a></button>
+    <p id="mensaje-error" class="mensaje"></p>
 
-    
+
 </body>
+
 </html>

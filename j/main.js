@@ -1,3 +1,20 @@
+//DOM
+
+//innerHTML
+let saludo = document.getElementById("bienvenido")
+const usuario = JSON.parse(localStorage.getItem("usuario"))
+if (usuario !== null) {
+    console.log(usuario)
+    saludo.innerHTML = `Bienvenido de vuelta ${usuario.nombre}`
+}
+else {
+    saludo.innerHTML = ("Bienvenido, si desea puede registrarse")
+}
+let contenedor = document.getElementById("container")
+contenedor.innerHTML = "Este mes tenemos TALLER DE COSTURA: Lunes 13/10 a las 17:00hs."
+
+//DEJO COMENTADO CODIGO DE LA ENTREGA ANTERIOR POR SI LO NECESITO PARA LA ENTREGA FINAL
+
 /*const clasesDisponibles = [] */
 /*
 const cupos = 5
@@ -22,13 +39,6 @@ class Actividad {
     }
 }
 /*
-// const celular1 = new Celular("samsung", "s25", 1000)
-// const celular2 = new Celular("apple", "iphone 17", 1200)
-
-// console.log(celular1)
-// console.log(celular2)
-// celular1.enPesos()
-// celular2.enPesos()
 
  const actividades = []
  const cargaActividades = () => {
@@ -117,38 +127,6 @@ function salir() {
 }*/
 
 
-//DOM
-
-//innerHTML
- let saludo = document.getElementById("bienvenido")
- const usuario = JSON.parse(localStorage.getItem("usuario"))
- if (usuario !== null) {
-    console.log(usuario)
- saludo.innerHTML= `Bienvenido de vuelta ${usuario.nombre}`
- }
-  else {
-    saludo.innerHTML= ("Bienvenido, si desea puede registrarse")
-}
- let contenedor = document.getElementById("container")
- contenedor.innerHTML = "Este mes tenemos TALLER DE COSTURA: Lunes 13/10 a las 17:00hs."
 
 
- const actividad = new Actividad (cargaNombre, cargaTipo, cargaClase, cargaDia, cargaHora)
 
-let disciplinas = ["acrobacia en tela", "yoga", "funcional", "zumba"]
-let clases = document.getElementById("clases")
-for(const disciplina of disciplinas) {
-     let li = document.createElement("li")
-     li.innerHTML = disciplina
-     clases.appendChild(li)
-}
-//EVENTOS
-let reservar = document.getElementById("reservar")
-reservar.addEventListener("click", mostrarSaludo)
-
-function mostrarSaludo() {
-    let nombre = document.getElementById("nombre")
-    let saludo = document.getElementById ("saludo")
-    let alert = document.getElementById ("alert")
-    saludo.innerHTML = ("Te damos la Bienvenida ")
-}
