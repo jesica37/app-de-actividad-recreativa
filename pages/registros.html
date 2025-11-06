@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- JS -->
-    <script defer src="../j/registros.js"></script>
+    <script defer src="../j/usuarios.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="../styles/style.css">
     <title>Simulador</title>
@@ -14,17 +14,25 @@
 <body>
 
     <h1>Ser libre</h1>
-    <h3 class="contenido">Ingese sus datos para registrarse:</h3>
-
-    <label for="nombre">Nombre: </label>
-    <input type="text" name="nombre" id="nombre">
-    <label for="apellido">Apellido: </label>
-    <input type="text" name="apellido" id="apellido">
-    <button id="enviar" class="boton">Enviar</button>
-    <button class="boton"> <a href="../index.html" id="volver">Volver</a></button>
-    <p id="mensaje-error" class="mensaje"></p>
-
-
+    <h2 class="contenido">Ingese sus datos para registrarse:</h2>
+    <div class="datos">
+        <label for="nombre">Nombre*: </label>
+        <input type="text" name="nombre" id="nombre" placeholder="nombre">
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="apellido" id="apellido" placeholder="apellido">
+        <label for="usuario">Usuario*: </label>
+        <input type="text" name="usuario" id="usuario" placeholder="usuario">
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" id="edad" placeholder="edad">
+        <label for="contraseña">Contraseña*: </label>
+        <input type="password" name="contraseña" id="contraseña">
+        <label for="contraseña">Repita Contraseña*: </label>
+        <input type="password" name="contraseña" id="confirmacion-de-contraseña">
+        <button id="enviar" class="boton">Enviar</button>
+        <button class="btn"> <a class="link" href="../index.html" id="volver">Volver</a></button>
+    </div>
+    <!-- SWEETALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

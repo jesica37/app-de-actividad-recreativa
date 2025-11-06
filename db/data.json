@@ -1,0 +1,188 @@
+[
+  {
+    "id": 1,
+    "nombre": "yoga",
+    "dia": "lunes y miercoles",
+    "hora": 10,
+    "cupos": [
+      { "fecha": "2025-11-10", "disponible": 10 },
+      { "fecha": "2025-11-12", "disponible": 10 },
+      { "fecha": "2025-11-17", "disponible": 10 },
+      { "fecha": "2025-11-19", "disponible": 10 },
+      { "fecha": "2025-11-24", "disponible": 0 },
+      { "fecha": "2025-11-26", "disponible": 10 }
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "pilates",
+    "dia": "martes",
+    "hora": 11,
+    "cupos": [
+      { "fecha": "2025-11-11", "disponible": 10 },
+      { "fecha": "2025-11-18", "disponible": 10 },
+      { "fecha": "2025-11-25", "disponible": 10 }
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "acrobacia en tela",
+    "dia": "martes y jueves",
+    "hora": 18,
+    "cupos": [
+      { "fecha": "2025-11-11", "disponible": 10 },
+      { "fecha": "2025-11-13", "disponible": 10 },
+      { "fecha": "2025-11-18", "disponible": 10 },
+      { "fecha": "2025-11-20", "disponible": 10 },
+      { "fecha": "2025-11-25", "disponible": 10 },
+      { "fecha": "2025-11-27", "disponible": 10 }
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "zumba",
+    "dia": "miercoles",
+    "hora": 10,
+    "cupos": [
+      { "fecha": "2025-11-12", "disponible": 10 },
+      { "fecha": "2025-11-19", "disponible": 10 },
+      { "fecha": "2025-11-26", "disponible": 10 }
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "funcional",
+    "dia": "viernes",
+    "hora": 19,
+    "cupos": [
+      { "fecha": "2025-11-07", "disponible": 10 },
+      { "fecha": "2025-11-14", "disponible": 10 },
+      { "fecha": "2025-11-21", "disponible": 10 },
+      { "fecha": "2025-11-28", "disponible": 10 }
+    ]
+  },
+  {
+    "id": 6,
+    "nombre": "circuito aerobico",
+    "dia": "viernes",
+    "hora": 20,
+    "cupos": [
+      { "fecha": "2025-11-07", "disponible": 10 },
+      { "fecha": "2025-11-14", "disponible": 10 },
+      { "fecha": "2025-11-21", "disponible": 10 },
+      { "fecha": "2025-11-28", "disponible": 10 }
+    ]
+  },
+  {
+    "id": 7,
+    "nombre": "TRX",
+    "dia": "jueves",
+    "hora": 14,
+    "cupos": [
+      { "fecha": "2025-11-06", "disponible": 10 },
+      { "fecha": "2025-11-13", "disponible": 10 },
+      { "fecha": "2025-11-20", "disponible": 10 },
+      { "fecha": "2025-11-27", "disponible": 10 }
+    ]
+  },
+  {
+    "id": 8,
+    "nombre": "running",
+    "dia": "sabado",
+    "hora": 10,
+    "cupos": [
+      { "fecha": "2025-11-08", "disponible": 10 },
+      { "fecha": "2025-11-15", "disponible": 10 },
+      { "fecha": "2025-11-22", "disponible": 10 },
+      { "fecha": "2025-11-29", "disponible": 10 }
+    ]
+  },
+  {
+    "id": 9,
+    "nombre": "pilates + circuito",
+    "dia": "martes",
+    "hora": 15,
+    "cupos": [
+      { "fecha": "2025-11-11", "disponible": 10 },
+      { "fecha": "2025-11-18", "disponible": 10 },
+      { "fecha": "2025-11-25", "disponible": 10 }
+    ]
+  },
+  {
+    "id": 10,
+    "nombre": "ritmos",
+    "dia": "martes y jueves",
+    "hora": 9,
+    "cupos": [
+      { "fecha": "2025-11-11", "disponible": 10 },
+      { "fecha": "2025-11-13", "disponible": 10 },
+      { "fecha": "2025-11-18", "disponible": 10 },
+      { "fecha": "2025-11-20", "disponible": 10 },
+      { "fecha": "2025-11-25", "disponible": 10 },
+      { "fecha": "2025-11-27", "disponible": 10 }
+    ]
+  },
+  {
+    "id": 11,
+    "nombre": "caminata",
+    "dia": "sabado",
+    "hora": 11,
+    "cupos": [
+      { "fecha": "2025-11-08", "disponible": 10 },
+      { "fecha": "2025-11-15", "disponible": 10 },
+      { "fecha": "2025-11-22", "disponible": 10 },
+      { "fecha": "2025-11-29", "disponible": 10 }
+    ]
+  },
+  {
+    "id": 12,
+    "nombre": "funcional + TRX",
+    "dia": "viernes",
+    "hora": 21,
+    "cupos": [
+      { "fecha": "2025-11-07", "disponible": 10 },
+      { "fecha": "2025-11-14", "disponible": 10 },
+      { "fecha": "2025-11-21", "disponible": 10 },
+      { "fecha": "2025-11-28", "disponible": 10 }
+    ]
+  },
+  {
+    "id": 13,
+    "nombre": "CrossFit",
+    "dia": "lunes y viernes",
+    "hora": 8,
+    "cupos": [
+      { "fecha": "2025-11-07", "disponible": 10 },
+      { "fecha": "2025-11-10", "disponible": 10 },
+      { "fecha": "2025-11-14", "disponible": 10 },
+      { "fecha": "2025-11-17", "disponible": 10 },
+      { "fecha": "2025-11-21", "disponible": 10 },
+      { "fecha": "2025-11-24", "disponible": 10 },
+      { "fecha": "2025-11-28", "disponible": 10 }
+    ]
+  },
+  {
+    "id": 14,
+    "nombre": "Jumping",
+    "dia": "sabado",
+    "hora": 17,
+    "cupos": [
+      { "fecha": "2025-11-08", "disponible": 10 },
+      { "fecha": "2025-11-15", "disponible": 10 },
+      { "fecha": "2025-11-22", "disponible": 10 },
+      { "fecha": "2025-11-29", "disponible": 10 }
+    ]
+  },
+  {
+    "id": 15,
+    "nombre": "caminata + jumping",
+    "dia": "sabado",
+    "hora": 18,
+    "cupos": [
+      { "fecha": "2025-11-08", "disponible": 10 },
+      { "fecha": "2025-11-15", "disponible": 10 },
+      { "fecha": "2025-11-22", "disponible": 10 },
+      { "fecha": "2025-11-29", "disponible": 10 }
+    ]
+  }
+]
