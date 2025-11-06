@@ -22,7 +22,6 @@ let contenedor = document.getElementById("container")
 contenedor.innerHTML = "Este mes tenemos TALLER DE COSTURA: Lunes 13/10 a las 17:00hs."
 
 function renderBoton(text, ref) {
-    console.log("render: ", text)
     const boton = document.createElement("a")
     boton.textContent = text
     boton.href = ref

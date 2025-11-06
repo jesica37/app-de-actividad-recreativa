@@ -9,7 +9,6 @@ function verClases() {
     fetch(URL)
         .then(response => response.json())
         .then(datos => {
-            console.log(datos)
             const clasesArray = []
             for (const dato of datos) {
                 const clase = new Clase(dato.id, dato.nombre, dato.dia, dato.hora, dato.cupos)
