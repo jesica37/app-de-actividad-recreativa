@@ -25,10 +25,35 @@ function botonDeBorrar(reservas) {
     let botonBorrar = document.querySelectorAll(".btn-borrar")
     botonBorrar.forEach(boton => {
         boton.onclick = (e) => {
-            const claseId = e.currentTarget.id
-            const nuevasReservas = reservas.filter(reserva => reserva.idClase != claseId)
-            localStorage.setItem(`reservas${usuario.nombreUsuario}`, JSON.stringify(nuevasReservas))
-            renderReservas(nuevasReservas)
-        }
-    })
+            const claseId = e.currentTarget.id;
+            Swal.fire({
+                title: "¿Desea eliminar reserva?",
+                text: "Esta acción eliminará tu reserva y no podrás recuperarla.",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#1ebc45ff",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Sí, eliminar",
+                cancelButtonText: "Cancelar"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    const nuevasReservas = reservas.filter(reserva => reserva.idClase != claseId);
+
+                    localStorage.setItem(`reservas${usuario.nombreUsuario}`, JSON.stringify(nuevasReservas));
+
+                    renderReservas(nuevasReservas);
+
+                    Swal.fire({
+                        title: "Eliminada",
+                        text: "Tu reserva ha sido eliminada correctamente.",
+                        icon: "success"
+                    });
+                }
+            });
+        };
+    });
 }
+
+
+
+
